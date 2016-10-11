@@ -1,8 +1,14 @@
+# challenge instructions: https://github.com/llSourcell/gender_classification_challenge
+# get classifiers: http://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html
+# get scores: http://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html
+
 from sklearn import tree
 
 clf = tree.DecisionTreeClassifier()
 
 ## CHALLENGE - create 3 more classifiers...
+# get classifiers: http://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html
+
 #1
 #2
 #3
@@ -20,5 +26,6 @@ clf = clf.fit(X, Y)
 prediction = clf.predict([[190, 70, 43]])
 
 #CHALLENGE compare their reusults and print the best one!
+# get scores: http://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html
 
 print prediction
