@@ -35,21 +35,21 @@ Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female', 'fe
 # CHALLENGE - ...and train them on our data
 
 clf = clf.fit(X, Y)
-prediction = clf.predict(X) #prediction = clf.predict([[190, 70, 43]])
+prediction = clf.predict( X ) #prediction = clf.predict( [[190, 70, 43]] )
 
 #1
 clf1 = clf1.fit(X, Y)
-prediction1 = clf1.predict(X)
+prediction1 = clf1.predict( X )
 #2
 clf2 = clf2.fit(X, Y)
-prediction2 = clf2.predict(X)
+prediction2 = clf2.predict( X )
 #3
 clf3 = clf3.fit(X, Y)
-prediction3 = clf3.predict(X)
+prediction3 = clf3.predict( X )
 
 #_________________________________________________
 
-# CHALLENGE compare their results and print the best one!
+# CHALLENGE - compare their results and print the best one!
 
 # get scores: http://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html
 
