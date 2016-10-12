@@ -9,11 +9,12 @@ from sklearn.svm import SVC
 # accuracy scoring: http://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html
 from sklearn.metrics import accuracy_score
 
-
+#_________________________________________________
 
 clf = tree.DecisionTreeClassifier()
 
 # CHALLENGE - create 3 more classifiers...
+
 # get classifiers: http://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html
 
 #1
@@ -29,11 +30,12 @@ X = [[181, 80, 44], [177, 70, 43], [160, 60, 38], [154, 54, 37], [166, 65, 40], 
 
 Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female', 'female', 'male', 'male']
 
-
+#_________________________________________________
 
 # CHALLENGE - ...and train them on our data
+
 clf = clf.fit(X, Y)
-prediction = clf.predict(X) # prediction = clf.predict([[190, 70, 43]])
+prediction = clf.predict(X) #prediction = clf.predict([[190, 70, 43]])
 
 #1
 clf1 = clf1.fit(X, Y)
@@ -45,9 +47,10 @@ prediction2 = clf2.predict(X)
 clf3 = clf3.fit(X, Y)
 prediction3 = clf3.predict(X)
 
-
+#_________________________________________________
 
 # CHALLENGE compare their results and print the best one!
+
 # get scores: http://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html
 
 #print prediction
